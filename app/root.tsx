@@ -1,3 +1,4 @@
+import { Outlet } from "@remix-run/react";
 import { LiveReload } from "remix";
 
 export default function App() {
@@ -8,8 +9,8 @@ export default function App() {
         <title>Remix: So great, it's funny!</title>
       </head>
       <body>
-        Hello world
-        <LiveReload />
+        <Outlet />
+        <LiveReload /> {/* Useful for development */}
       </body>
     </html>
   );
